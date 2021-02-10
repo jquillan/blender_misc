@@ -1,0 +1,100 @@
+import bpy
+from bpy import data as D
+from bpy import context as C
+from mathutils import *
+from math import *
+
+bpy.data.objects['Empty'].location.
+#!   File "<blender_console>", line 1
+#!     bpy.data.objects['Empty'].location.
+#!                                       ^
+#! SyntaxError: invalid syntax
+#! 
+bpy.data.objects['Empty'].keyframe_insert(location, 'INSERTKEY_AVAILABLE')
+#! Traceback (most recent call last):
+#!   File "<blender_console>", line 1, in <module>
+#! NameError: name 'location' is not defined
+#! 
+bpy.data.objects['Empty'].keyframe_insert(.location)
+#!   File "<blender_console>", line 1
+#!     bpy.data.objects['Empty'].keyframe_insert(.location)
+#!                                               ^
+#! SyntaxError: invalid syntax
+#! 
+bpy.data.objects['Empty'].keyframe_insert("location")
+#~ True
+#~ 
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[20].co
+bpy.data.objects['Empty'].keyframe_insert("location")
+#~ True
+#~ 
+bpy.data.objects['Empty'].location = a
+bpy.data.objects['Empty'].keyframe_insert("location")
+#~ True
+#~ 
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[20].co
+bpy.data.objects['Empty'].location = a
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[40].co
+bpy.data.objects['Empty'].location = a
+bpy.data.objects['Empty'].keyframe_insert("location")
+#~ True
+#~ 
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[60].co
+bpy.data.objects['Empty'].location = a
+bpy.data.objects['Empty'].keyframe_insert("location")
+#~ True
+#~ 
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[80].co
+bpy.data.objects['Empty'].location = a
+bpy.data.objects['Empty'].keyframe_insert("location")
+#~ True
+#~ 
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[100].co
+bpy.data.objects['Empty'].location = a
+bpy.data.objects['Empty'].keyframe_insert("location")
+#~ True
+#~ 
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[120].co
+bpy.data.objects['Empty'].location = a
+bpy.data.objects['Empty'].keyframe_insert("location")
+#~ True
+#~ 
+
+################################################################################################################################################################################################################################################################
+bpy.data.objects['Empty'].keyframe_insert(location, 'INSERTKEY_AVAILABLE')
+bpy.data.objects['Empty'].location.
+bpy.data.objects['Empty'].keyframe_insert(group='INSERTKEY_AVAILABLE')
+bpy.data.
+bpy.ops.object.empty_add(type='PLAIN_AXES', location=a)
+bpy.ops.object.empty_add(type='PLAIN_AXES', location=
+len(bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points)
+len(bpy.data.grease_pencils['Stroke'].layers['Lines'].frames)
+bpy.data.grease_pencils['Stroke'].layers['Lines'].opacity
+bpy.data.grease_pencils['Stroke'].layers['Lines'].opacity = 0
+bpy.data.grease_pencils['Stroke'].layers['Lines'].opacity = 1
+bpy.data.grease_pencils['Stroke'].layers['Lines'].frames
+bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0]
+len(bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes)
+bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].
+bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points
+bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[0]
+bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points.co
+bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[0].co
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[0].co
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[10].co
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[20].co
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[40].co
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[60].co
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[80].co
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[100].co
+a = bpy.data.grease_pencils['Stroke'].layers['Lines'].frames[0].strokes[0].points[120].co
+bpy.data.objects['Empty'].location = a
+bpy.data.objects['Empty'].keyframe_insert('INSERTKEY_AVAILABLE')
+bpy.data.objects['Empty'].keyframe_insert(.location)
+bpy.data.objects['Empty'].keyframe_insert("location")
+dd = bpy.context.space_data
+dd.history
+dd.history[0].body
+for h in dd.history:
+    print(h.body)
+    
